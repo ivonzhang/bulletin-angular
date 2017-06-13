@@ -1,0 +1,26 @@
+<div class="top-area" style="display: block;">
+	<div class="header">
+		<div class="title">
+			{{bulletinDetailData._bulletin_detail.title}}
+		</div>
+		<div class="info">
+			<div class="date">
+				{{bulletinDetailData._bulletin_detail.createTime | date:'yyyy-MM-dd hh:mm'}}
+			</div>
+		</div>
+	</div>
+</div>
+<div class="detail-area" style="display: block; height: 569px;">
+	<div class="content" ng-bind-html="bulletinDetailData._bulletin_detail.content">
+		
+	</div>
+	<div class="department">
+		{{bulletinDetailData._bulletin_detail.department}}
+	</div>
+	<div id="read-more"></div>
+	<div class="attach" style="display: none;">
+		<div id="attach-header">
+			¸½¼þ
+		</div>
+	</div>
+</div>

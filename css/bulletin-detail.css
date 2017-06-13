@@ -1,0 +1,206 @@
+@CHARSET "UTF-8";
+
+body {
+	font-size: 1em;
+	font-family: 'Microsoft YaHei', Tahoma, Helvetica, Arial, SimSun, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+div.page-loading {
+	background-color: #000000;
+	background-image: url(../img/page-loading.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+	opacity: 0.3;
+	z-index: 9;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	overflow: hidden;
+}
+div.top-area {
+	width: 100%;
+}
+div.top-area div.bar {
+	height: 40px;
+	width: 100%;
+	background-color: #ffffff;
+	border-bottom: 1px solid #cccccc;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	box-orient: horizontal;
+}
+div.top-area div.bar div.back {
+/*	width: 60px; */
+	margin-top: 5px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 0.9em;
+	text-align: center;
+	cursor: pointer;
+	padding-left: 1em;
+	padding-right: 1em;
+	border-right: 1px solid #999999;
+	-webkit-box-flex: 0;
+	-moz-box-flex: 0;
+	box-flex: 0;
+}
+div.top-area div.bar div.glue {
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	box-flex: 1;
+}
+div.top-area div.header {
+	margin: 0.5em;
+	//padding-bottom: 0.5em;
+	//border-bottom: 1px solid #cccccc;
+}
+div.top-area div.header div.title {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #000000;
+}
+div.top-area div.header div.info {
+	font-size: 0.8125em;
+	color: #808080;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	box-orient: horizontal;
+}
+div.top-area div.header div.info div.date {
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	box-flex: 1;
+}
+div.detail-area {
+	overflow-y: auto;
+}
+div.detail-area div.content {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+div.detail-area div.content p {
+	font-size: 0.9em;
+	//line-height: 1.275em;//去掉行高 正文字体过大时会叠加在一起
+	margin-bottom: 0.875em;
+}
+div.department{
+	text-align: right;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #000000;
+}
+
+div#read-more{
+	width:100%;
+	text-align:center;
+}
+div#read-more div{
+	width:120px;
+	padding:1px;
+	margin:10px auto;
+	line-height:40px;
+	font-size: 0.9em;
+	color: #157efb;
+	//background-color: #F2F2F2;
+	
+	background-image: url(../img/expand.png);
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	background-size: 10px 10px;
+}
+.overflow-choose{overflow:hidden;}
+
+/**就附件样式
+div.detail-area div.attach {
+	margin: 0.5em;
+	border: 1px solid #dddddd;
+}
+div.detail-area div.attach div.item {
+	height: 3em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	border-bottom: 1px solid #dddddd;
+	background-image: url(img/file.png);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	background-size: 39px 39px;
+}
+div.detail-area div.attach div.item div.title {
+	margin-left: 60px;
+	font-size: 1em;
+	color: #2e343d;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+div.detail-area div.attach div.item div.size {
+	margin-left: 60px;
+	margin-top: 0.3em;
+	font-size: 0.75em;
+	color: #939393;
+}
+div.message-area {
+	width: 100%;
+	text-align: center;
+	color: #808080;
+	padding-top: 1em;
+}
+**/
+
+div.attach {
+	//display: none;
+	padding: 0 0.5em;
+	border-top: dashed 1px #cccccc;
+}
+#attach-header {
+	height: 30px;
+	line-height: 30px;
+	font-size: 20px;
+	padding: 0.5em 0;
+}
+#attach-list {
+	padding-bottom: 0.5em;
+}
+div.detail-area div.attach #attach-list div.item {
+	height: 3em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	border-bottom: 1px solid #dddddd;
+	background-image: url(img/file.png);
+	background-repeat: no-repeat;
+	background-position: 0px 10px;
+	background-size: 24px 24px;
+}
+div.detail-area div.attach #attach-list div.item div.title {
+	margin-left: 44px;
+	font-size: 1em;
+	color: #2e343d;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+div.detail-area div.attach #attach-list div.item div.size {
+	margin-left: 44px;
+	margin-top: 0.3em;
+	font-size: 0.75em;
+	color: #939393;
+}
+div.message-area {
+	width: 100%;
+	text-align: center;
+	color: #808080;
+	padding-top: 1em;
+}
+
+

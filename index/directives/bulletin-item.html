@@ -1,0 +1,24 @@
+
+<div class="bulletin">
+	<div class="content">
+		<div class="title_attach">
+			<div class="title">
+				{{bulletin.title}}
+			</div>
+		</div>
+		<div class="info">
+			<div class="s1">
+				Department: {{bulletin.department}}
+			</div>
+			<div class="s2">
+				{{bulletin.startTime | date:'yyyy-MM-dd hh:mm'}}
+			</div>
+		</div>
+		<div class="text">
+			{{bulletin.summary}}
+		</div>
+		<div class="read_detail">
+			See Detail&gt;
+		</div>
+	</div>
+</div>
